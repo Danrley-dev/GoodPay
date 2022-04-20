@@ -203,7 +203,7 @@
                         <p class="card-text">Com os planos de economia para sair no rolê, marque sua data de saida e só
                             guarde em seu cofre todos os meses se você for sorteado ganha 5x o que tiver em seu cofrinho
                             para dar aquele UP na suas férias.</p>
-                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#promo1">Leia mais...</button>
+                        <button type="button" class="btn btn-outline-light" onclick="alertaPromo()">Leia mais...</button>
                         <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
                     </div>
                 </div>
@@ -237,11 +237,13 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Leia Mais</h5>
+                    <h5 class="modal-title" id="titulo"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Conteúdo....
+                    <p id="corpo">
+                        
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
