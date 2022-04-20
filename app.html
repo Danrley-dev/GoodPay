@@ -71,10 +71,11 @@
                                                     aria-describedby="basic-addon1">
                                             </div>
                                             <div class="d-grid gap-2">
-                                                <button class="btn btn-outline-info" type="button"
-                                                    onclick="rotaLogin()" data-bs-dismiss="offcanvas">Entrar</button>
+                                                <button class="btn btn-outline-info" type="button" onclick="rotaLogin()"
+                                                    data-bs-dismiss="offcanvas">Entrar</button>
                                                 <button class="btn btn-outline-success" type="button"
-                                                    onclick="rotaCadastro()" data-bs-dismiss="offcanvas">Cadastrar</button>
+                                                    onclick="rotaCadastro()"
+                                                    data-bs-dismiss="offcanvas">Cadastrar</button>
                                             </div>
                                         </form>
                                     </div>
@@ -182,18 +183,77 @@
     </header>
     <main>
         <div class="col-md-10" style="margin-left: 10%; margin-right: 10%;">
-            <div class="card mb-3" style="margin-top: 10%;">
-                <img src="./img/BannerGoodPay2.png" class="card-img-top" alt="Banner de promoção numero 2">
-                <div class="card-body">
-                    <h5 class="card-title">Volte para o lado verde da vida</h5>
-                    <p class="card-text">
-                        Com o GoodPay cash back você economiza e na compra com nossos parceiros ainda receberá dinheiro
-                        de volta. Mais de 1645 parceiros de compras vão te ajudar a voltar para o saldo positivo em seu
-                        caixa. As compras com cash back deveram ser feitas em débito ou dinheiro e o retorno vai para o
-                        porquinho de seu caixa.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: 10%;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mb-3">
+                            <img src="./img/BannerGoodPay.png" class="card-img-top" alt="Banner de promoção numero 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Vem para o simples: GoodPay</h5>
+                                <p class="card-text">
+                                    Vamos descomplicar suas finanças, o aplicativo GoodPay tem a proposta de organizar
+                                    suas finanças com uso de tecnologia Javascript. Ele irá montar e organizar seus
+                                    gastos usando uma interface Bootstrap fluida e bem desenvolvida para facilitar seu
+                                    caixa pessoal. A aplicação tem uso simples e servirá para organiozar em um vetor de
+                                    obejtos suas entradas e saídas baseadas no uso de cards e alertas para seu
+                                    entendimento fácil do uso de suas receitas e gastos.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Abril 20 de 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3">
+                            <img src="./img/BannerGoodPay2.png" class="card-img-top" alt="Banner de promoção numero 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Volte para o lado verde da vida</h5>
+                                <p class="card-text">
+                                    Com o GoodPay cash back você economiza e na compra com nossos parceiros ainda
+                                    receberá dinheiro
+                                    de volta. Mais de 1645 parceiros de compras vão te ajudar a voltar para o saldo
+                                    positivo em seu
+                                    caixa. As compras com cash back deveram ser feitas em débito ou dinheiro e o retorno
+                                    vai para o
+                                    porquinho de seu caixa.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mb-3">
+                            <img src="./img/BannerGoodPay3.png" class="card-img-top" alt="Banner de promoção numero 2">
+                            <div class="card-body">
+                                <h5 class="card-title">The Pig Time</h5>
+                                <p class="card-text">
+                                    Com a assinatura do Pig Time você terá mais de 50 especialistas em finanças para
+                                    dicas de como economizar em cada compra na sua vida. Ainda terá 4 reais de retorno
+                                    para cada vez que for sorteada no Pig Time e ao final de 1 ano poderá ganhar 5x seu
+                                    proquinho. Ecomizando e investindo ao mesmo tempo na GoodPay App.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
             <div class="card-group">
                 <div class="card">
@@ -203,7 +263,8 @@
                         <p class="card-text">Com os planos de economia para sair no rolê, marque sua data de saida e só
                             guarde em seu cofre todos os meses se você for sorteado ganha 5x o que tiver em seu cofrinho
                             para dar aquele UP na suas férias.</p>
-                        <button type="button" class="btn btn-outline-light" onclick="alertaPromo()">Leia mais...</button>
+                        <button type="button" class="btn btn-outline-light" onclick="alertaPromo()">Leia
+                            mais...</button>
                         <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
                     </div>
                 </div>
@@ -242,7 +303,7 @@
                 </div>
                 <div class="modal-body">
                     <p id="corpo">
-                        
+
                     </p>
                 </div>
                 <div class="modal-footer">

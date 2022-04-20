@@ -19,8 +19,8 @@ function rotaLogin() {
 
 function alertaPromo(){
   let titulo ="Promomção 1 [Quebra da Banca]";
-  let corpo = "Super legal <br> <img src='./img/4.png' width='160' height='160'>";
-  
+  let corpo = "<h6>Super legal</h6> <p><img src='./img/4.png' width='160' height='160'></p> ";
+
   janelaPromocao.show();
 
   document.getElementById("titulo").innerHTML = titulo;
