@@ -46,16 +46,24 @@
                                     <div class="accordion-body">
                                         <form action="" class="ms-4">
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">Email</span>
-                                                <input type="email" class="form-control" placeholder="Entre com seu e-mail" aria-label="email" aria-describedby="basic-addon1">
+                                                <span class="input-group-text" id="basic-addon1">E-Mail</span>
+                                                <input id="email" type="email" class="form-control" placeholder="Entre com seu e-mail" aria-label="email" aria-describedby="basic-addon1">
                                             </div>
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text" id="basic-addon1">Senha</span>
-                                                <input type="password" class="form-control" placeholder="Entre com sua senha" aria-label="senha" aria-describedby="basic-addon1">
+                                                <input id="senha" type="password" class="form-control" placeholder="Senha de Login" aria-label="senha" aria-describedby="basic-addon1">
                                             </div>
+
                                             <div class="d-grid gap-2">
-                                                <button class="btn btn-outline-secondary" type="button" data-bs-dismiss="offcanvas" onclick="rotaLogin()">Entre no App </button>
-                                                <button class="btn btn-outline-secondary" type="button" data-bs dismiss="offcanvas" onclick="rotaCadastro()">Novo Usúario</button>
+                                                <button class="btn btn-outline-info" type="button" onclick="rotaLogin()" data-bs-dismiss="offcanvas">Entrar</button>
+                                                <button class="btn btn-outline-success" type="button" onclick="rotaCadastro()" data-bs-dismiss="offcanvas">Cadastrar</button>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    <a href="recuperar.html">
+                                                        <button type="button" class="btn btn-link" id="">Esqueci minha senha</button>
+                                                    </a>
+                                                </p>
                                             </div>
                                         </form>
                                     </div>
@@ -71,18 +79,10 @@
                                     <div class="accordion-body">
                                         <h5>DevTeam <span class="badge bg-success">BCW18</span> </h5>
                                         <p>
-                                            Este aplicativo não tem conexão com o banco de dados, o desenvolvimento
-                                            deste aplicativo tem como
-                                            finalidade o aprendizado de aplicações e interface web. Assim o uso deste
-                                            aplicativo deve ser
-                                            pensado como um
-                                            protótipo não funcional.
+                                            Este aplicativo não tem conexão com o banco de dados, o desenvolvimento deste aplicativo tem como finalidade o aprendizado de aplicações e interface web. Assim o uso deste aplicativo deve ser pensado como um protótipo não funcional.
                                         </p>
                                         <p>
-                                            A aplicação usa elementos de personalização em Bootstrap 5, com Javascript
-                                            local,
-                                            os dados utilizados para e adicionados neste interface não são enviados a um
-                                            serviço.
+                                            A aplicação usa elementos de personalização em Bootstrap 5, com Javascript local, os dados utilizados para e adicionados neste interface não são enviados a um serviço.
                                         </p>
                                         <p class="badge bg-secondary">
                                             BCW18:(FullStack)
@@ -99,10 +99,7 @@
                                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Curso de Deselvolvimento web baseado em Java Spring no Back-End com Angular
-                                            Typescript no
-                                            Front-End. Desenvolvido com metodologias agilistas e usando como base
-                                            Projetos em DevOps.
+                                            Curso de Deselvolvimento web baseado em Java Spring no Back-End com Angular Typescript no Front-End. Desenvolvido com metodologias agilistas e usando como base Projetos em DevOps.
                                         </p>
                                         <div class="text-center">
                                             <img src="./img/logo-itlean.png" class="rounded" alt="Logo da SoulCode" width="210" height="65">
@@ -120,23 +117,12 @@
                                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Tech For Good: 5 pilares que vão transformar o mundo: Educação, Diversidade,
-                                            Saúde, Longevidade e
-                                            Sustentabilidade
+                                            Tech For Good: 5 pilares que vão transformar o mundo: Educação, Diversidade, Saúde, Longevidade e Sustentabilidade
                                         </p>
                                         <p>
-                                            Nossa missão é a formação e o emprego, aplicando os 5 pilares do "Tech For
-                                            Good". Ser uma escola
-                                            inclusiva, que, através de nossa metodologia ágil, possa capacitar e educar
-                                            em tecnologia, gerar
-                                            oportunidades de emprego para todas as gerações, no início ou na
-                                            ressignificação de carreira, com
-                                            foco em diversidade e equidade. Numa profissão que fomente o bem-estar
-                                            físico e mental, permitindo
-                                            o
-                                            equilíbrio entre a vida profissional e pessoal, através do trabalho remoto,
-                                            com flexibilidade de
-                                            horários, além de ser um negócio sustentável e responsável, socialmente.
+                                            Nossa missão é a formação e o emprego, aplicando os 5 pilares do "Tech For Good". Ser uma escola inclusiva, que, através de nossa metodologia ágil, possa capacitar e educar em tecnologia, gerar oportunidades de emprego para todas as gerações, no início
+                                            ou na ressignificação de carreira, com foco em diversidade e equidade. Numa profissão que fomente o bem-estar físico e mental, permitindo o equilíbrio entre a vida profissional e pessoal, através do trabalho
+                                            remoto, com flexibilidade de horários, além de ser um negócio sustentável e responsável, socialmente.
                                         </p>
                                         <p class="badge bg-primary">
                                             Team SoulCode
@@ -165,12 +151,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">Vem para o simples: GoodPay</h5>
                                 <p class="card-text">
-                                    Vamos descomplicar suas finanças, o aplicativo GoodPay tem a proposta de organizar
-                                    suas finanças com uso de tecnologia Javascript. Ele irá montar e organizar seus
-                                    gastos usando uma interface Bootstrap fluida e bem desenvolvida para facilitar seu
-                                    caixa pessoal. A aplicação tem uso simples e servirá para organiozar em um vetor de
-                                    obejtos suas entradas e saídas baseadas no uso de cards e alertas para seu
-                                    entendimento fácil do uso de suas receitas e gastos.
+                                    Vamos descomplicar suas finanças, o aplicativo GoodPay tem a proposta de organizar suas finanças com uso de tecnologia Javascript. Ele irá montar e organizar seus gastos usando uma interface Bootstrap fluida e bem desenvolvida para facilitar seu caixa
+                                    pessoal. A aplicação tem uso simples e servirá para organiozar em um vetor de obejtos suas entradas e saídas baseadas no uso de cards e alertas para seu entendimento fácil do uso de suas receitas e gastos.
                                 </p>
                                 <p class="card-text"><small class="text-muted">Abril 20 de 2022</small></p>
                             </div>
@@ -182,13 +164,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">Volte para o lado verde da vida</h5>
                                 <p class="card-text">
-                                    Com o GoodPay cash back você economiza e na compra com nossos parceiros ainda
-                                    receberá dinheiro
-                                    de volta. Mais de 1645 parceiros de compras vão te ajudar a voltar para o saldo
-                                    positivo em seu
-                                    caixa. As compras com cash back deveram ser feitas em débito ou dinheiro e o retorno
-                                    vai para o
-                                    porquinho de seu caixa.
+                                    Com o GoodPay cash back você economiza e na compra com nossos parceiros ainda receberá dinheiro de volta. Mais de 1645 parceiros de compras vão te ajudar a voltar para o saldo positivo em seu caixa. As compras com cash back deveram ser feitas em débito
+                                    ou dinheiro e o retorno vai para o porquinho de seu caixa.
                                 </p>
                                 <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
                             </div>
@@ -200,10 +177,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">The Pig Time</h5>
                                 <p class="card-text">
-                                    Com a assinatura do Pig Time você terá mais de 50 especialistas em finanças para
-                                    dicas de como economizar em cada compra na sua vida. Ainda terá 4 reais de retorno
-                                    para cada vez que for sorteada no Pig Time e ao final de 1 ano poderá ganhar 5x seu
-                                    proquinho. Ecomizando e investindo ao mesmo tempo na GoodPay App.
+                                    Com a assinatura do Pig Time você terá mais de 50 especialistas em finanças para dicas de como economizar em cada compra na sua vida. Ainda terá 4 reais de retorno para cada vez que for sorteada no Pig Time e ao final de 1 ano poderá ganhar 5x seu proquinho.
+                                    Ecomizando e investindo ao mesmo tempo na GoodPay App.
                                 </p>
                                 <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
                             </div>
@@ -224,9 +199,7 @@
                     <img src="img/4.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Money for Live</h5>
-                        <p class="card-text">Com os planos de economia para sair no rolê, marque sua data de saida e só
-                            guarde em seu cofre todos os meses se você for sorteado ganha 5x o que tiver em seu cofrinho
-                            para dar aquele UP na suas férias.</p>
+                        <p class="card-text">Com os planos de economia para sair no rolê, marque sua data de saida e só guarde em seu cofre todos os meses se você for sorteado ganha 5x o que tiver em seu cofrinho para dar aquele UP na suas férias.</p>
                         <button type="button" class="btn btn-outline-light" onclick="alertaPromo()">Leia
                             mais...</button>
                         <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
@@ -236,9 +209,7 @@
                     <img src="img/5.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Black Friday</h5>
-                        <p class="card-text">Todos os planos do GoodPay com 50% de descontos só não tem desconto quem
-                            não quer. Esta promoção é valida até dia 6 de janeiro de 2022 e somente para os planos que
-                            não tem sorteios e capitalização premiada.</p>
+                        <p class="card-text">Todos os planos do GoodPay com 50% de descontos só não tem desconto quem não quer. Esta promoção é valida até dia 6 de janeiro de 2022 e somente para os planos que não tem sorteios e capitalização premiada.</p>
                         <button type="button" class="btn btn-outline-light">Leia mais...</button>
                         <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
                     </div>
@@ -247,9 +218,8 @@
                     <img src="img/6.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Plano de Educação</h5>
-                        <p class="card-text">Comece a economizar assim que seu filho nascer e concorra todo ano á
-                            premios percentuais de seu porquinho e se seu beneficiado tirar nota superior à 800 no Mec
-                            Enem ganhe 3x do seu porquinho na hora para turbinar o prêmio pelo esforço dele.</p>
+                        <p class="card-text">Comece a economizar assim que seu filho nascer e concorra todo ano á premios percentuais de seu porquinho e se seu beneficiado tirar nota superior à 800 no Mec Enem ganhe 3x do seu porquinho na hora para turbinar o prêmio pelo
+                            esforço dele.</p>
                         <button type="button" class="btn btn-outline-light">Leia mais...</button>
                         <p class="card-text"><small class="text-muted">Abril 19 de 2022</small></p>
                     </div>
@@ -285,6 +255,22 @@
                 </div>
                 <div class="modal-body">
                     Não foi possível executar o Login. Verifique suas Informações.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="caixaBranco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="caixaBranco">Campos Vazios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Error#1033 - Os campos não podem ficar vazios.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
