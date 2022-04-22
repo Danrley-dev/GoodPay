@@ -27,3 +27,17 @@ function chamaModalCard() {
 
   mostrarModal.show();
 }
+
+function rotaRecuperar() {
+  let usuario = "danrley"
+  let email = "danrleysouza53@gmail.com"
+  let usuarioDigitado = document.getElementById("recuperarUsuario").value
+  let emailDigitado = document.getElementById("recuperarEmail").value
+  if (!usuarioDigitado || !emailDigitado) {
+      alert("Há campos não preenchidos");
+  } else if (usuarioDigitado !== usuario || emailDigitado !== email) {
+      alert("Email ou Usuario incorretos!")
+  } else {
+      alert("Codigo de recuperação enviado para o Email cadastrado!")
+  }
+}
