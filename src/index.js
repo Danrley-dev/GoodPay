@@ -1,6 +1,7 @@
 var janelaLogin = new bootstrap.Modal(document.getElementById("loginNegado"));
-var janelaPromocao = new bootstrap.Modal(document.getElementById("promo1"));
-var janelacaixaBranca = new bootstrap.Modal(document.getElementById("caixaBranco"))
+var mostrarModal = new bootstrap.Modal(document.getElementById("modalCard7"));
+var janelacaixaBranca = new bootstrap.Modal(document.getElementById("caixaBranco"));
+
 function rotaCadastro() {
   window.location.href = "../registro.html";
 }
@@ -20,12 +21,9 @@ function rotaLogin() {
   }
 }
 
-function alertaPromo() {
-  let titulo = "Promomção 1 [Quebra da Banca]";
-  let corpo = "<h6>Super legal</h6> <p><img src='./img/4.png' width='160' height='160'></p> ";
+function chamaModalCard() {
+  let titulo = document.getElementById("titulo").value;
+  let corpo = document.getElementById("corpo").value;
 
-  janelaPromocao.show();
-
-  document.getElementById("titulo").innerHTML = titulo;
-  document.getElementById("corpo").innerHTML = corpo;
+  mostrarModal.show();
 }
