@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./app.html">
                     <img src="./img/goodplayH.png" alt="logo com texto" width="130" height="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -34,43 +34,11 @@
                     </div>
                     <div class="offcanvas-body">
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                         </form>
                         <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top: 20px;">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Entre no GoodPay
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <form action="" class="ms-4">
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">E-Mail</span>
-                                                <input id="email" type="email" class="form-control" placeholder="Entre com seu e-mail" aria-label="email" aria-describedby="basic-addon1">
-                                            </div>
-                                            <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">Senha</span>
-                                                <input id="senha" type="password" class="form-control" placeholder="Senha de Login" aria-label="senha" aria-describedby="basic-addon1">
-                                            </div>
 
-                                            <div class="d-grid gap-2">
-                                                <button class="btn btn-outline-info" type="button" onclick="rotaLogin()" data-bs-dismiss="offcanvas">Entrar</button>
-                                                <button class="btn btn-outline-success" type="button" onclick="rotaCadastro()" data-bs-dismiss="offcanvas">Cadastrar</button>
-                                            </div>
-                                            <div>
-                                                <p>
-                                                    <a href="recuperar.html">
-                                                        <button type="button" class="btn btn-link" id="">Esqueci minha senha</button>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -89,24 +57,6 @@
                                         <p class="badge bg-secondary">
                                             BCW18:(FullStack)
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        BCW 18 [Java Full Stack]
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Curso de Deselvolvimento web baseado em Java Spring no Back-End com Angular Typescript no Front-End. Desenvolvido com metodologias agilistas e usando como base Projetos em DevOps.
-                                        </p>
-                                        <div class="text-center">
-                                            <img src="./img/logo-itlean.png" class="rounded" alt="Logo da SoulCode" width="210" height="65">
-                                            <img src="./img/logo-tnt.png" class="rounded" alt="Logo da SoulCode" width="120" height="90">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -150,21 +100,22 @@
                     <br>
                     <div class="input-group mb-3" style="width: 400px; height: 46px;">
                         <span class="input-group-text " id="basic-addon1 "><img src="./img/outline_account_circle_black_24dp.png " alt=" "></span>
-                        <input type="text " class="form-control " placeholder="Nome de usuário" aria-label="Username " aria-describedby="basic-addon1 ">
+                        <input type="text " class="form-control " placeholder="Nome de usuário" aria-label="Username " aria-describedby="basic-addon1 " id="recuperarUsuario">
                     </div>
                     <br>
                     <div class="input-group mb-3 " style="width: 400px; height: 46px;">
                         <span class="input-group-text " id="basic-addon1 "><img src="./img/outline_email_black_24dp.png " alt=" "></span>
-                        <input type="text " class="form-control " placeholder="Digite seu Email" aria-label="Username " aria-describedby="basic-addon1 ">
+                        <input type="text " class="form-control " placeholder="Digite seu Email" aria-label="Username " aria-describedby="basic-addon1 " id="recuperarEmail">
                     </div>
                     <br>
                     <div>
-                        <button type="button" class="btn btn-success" style="padding: 8px 100px; margin-right: 36%;">Enviar</button>
+                        <button type="button" class="btn btn-success" style="padding: 8px 100px; margin-right: 36%;" onclick="rotaRecuperar()">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 
 </html>
