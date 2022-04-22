@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/style.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -27,10 +24,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light stiky">
+        <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./app.html">
-                    <img src="./img/goodplayH.png" alt="Logo GoodPay" width="130" height="60">
+                    <img src="./img/goodplayH.png" alt="logo com texto" width="130" height="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -74,12 +71,21 @@
                                                     placeholder="Senha de Login" aria-label="senha"
                                                     aria-describedby="basic-addon1">
                                             </div>
+
                                             <div class="d-grid gap-2">
                                                 <button class="btn btn-outline-info" type="button" onclick="rotaLogin()"
                                                     data-bs-dismiss="offcanvas">Entrar</button>
                                                 <button class="btn btn-outline-success" type="button"
                                                     onclick="rotaCadastro()"
                                                     data-bs-dismiss="offcanvas">Cadastrar</button>
+                                            </div>
+                                            <div>
+                                                <p>
+                                                    <a href="recuperar.html">
+                                                        <button type="button" class="btn btn-link" id="">Esqueci minha
+                                                            senha</button>
+                                                    </a>
+                                                </p>
                                             </div>
                                         </form>
                                     </div>
@@ -99,17 +105,14 @@
                                         <h5>DevTeam <span class="badge bg-success">BCW18</span> </h5>
                                         <p>
                                             Este aplicativo não tem conexão com o banco de dados, o desenvolvimento
-                                            deste aplicativo tem como
-                                            finalidade o aprendizado de aplicações e interface web. Assim o uso deste
-                                            aplicativo deve ser
-                                            pensado como um
-                                            protótipo não funcional.
+                                            deste aplicativo tem como finalidade o aprendizado de aplicações e interface
+                                            web. Assim o uso deste aplicativo deve ser pensado como um protótipo não
+                                            funcional.
                                         </p>
                                         <p>
                                             A aplicação usa elementos de personalização em Bootstrap 5, com Javascript
-                                            local,
-                                            os dados utilizados para e adicionados neste interface não são enviados a um
-                                            serviço.
+                                            local, os dados utilizados para e adicionados neste interface não são
+                                            enviados a um serviço.
                                         </p>
                                         <p class="badge bg-secondary">
                                             BCW18:(FullStack)
@@ -130,9 +133,8 @@
                                     <div class="accordion-body">
                                         <p>
                                             Curso de Deselvolvimento web baseado em Java Spring no Back-End com Angular
-                                            Typescript no
-                                            Front-End. Desenvolvido com metodologias agilistas e usando como base
-                                            Projetos em DevOps.
+                                            Typescript no Front-End. Desenvolvido com metodologias agilistas e usando
+                                            como base Projetos em DevOps.
                                         </p>
                                         <div class="text-center">
                                             <img src="./img/logo-itlean.png" class="rounded" alt="Logo da SoulCode"
@@ -156,26 +158,46 @@
                                     <div class="accordion-body">
                                         <p>
                                             Tech For Good: 5 pilares que vão transformar o mundo: Educação, Diversidade,
-                                            Saúde, Longevidade e
-                                            Sustentabilidade
+                                            Saúde, Longevidade e Sustentabilidade
                                         </p>
                                         <p>
                                             Nossa missão é a formação e o emprego, aplicando os 5 pilares do "Tech For
-                                            Good". Ser uma escola
-                                            inclusiva, que, através de nossa metodologia ágil, possa capacitar e educar
-                                            em tecnologia, gerar
-                                            oportunidades de emprego para todas as gerações, no início ou na
-                                            ressignificação de carreira, com
-                                            foco em diversidade e equidade. Numa profissão que fomente o bem-estar
-                                            físico e mental, permitindo
-                                            o
-                                            equilíbrio entre a vida profissional e pessoal, através do trabalho remoto,
-                                            com flexibilidade de
-                                            horários, além de ser um negócio sustentável e responsável, socialmente.
+                                            Good". Ser uma escola inclusiva, que, através de nossa metodologia ágil,
+                                            possa capacitar e educar em tecnologia, gerar oportunidades de emprego para
+                                            todas as gerações, no início
+                                            ou na ressignificação de carreira, com foco em diversidade e equidade. Numa
+                                            profissão que fomente o bem-estar físico e mental, permitindo o equilíbrio
+                                            entre a vida profissional e pessoal, através do trabalho
+                                            remoto, com flexibilidade de horários, além de ser um negócio sustentável e
+                                            responsável, socialmente.
                                         </p>
                                         <p class="badge bg-primary">
                                             Team SoulCode
                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        Ajuda
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body p-0 pt-2">
+                                        <ul class="list-group">
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <li class="list-group-item">gp-error#1011 - Credenciais incorretas...
+                                                </li>
+                                            </a>
+                                            <a href="#" class="text-decoration-none text-dark">
+                                                <li class="list-group-item text-dark">gp-error#1022 - Campos vazios...
+                                                </li>
+                                            </a>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -237,10 +259,44 @@
             </div>
         </div>
     </main>
+    <!--Modal "card8"-->
+    <!--Modal "card9"-->
+
+    <div class="modal fade" id="loginNegado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginNegado">Erro de Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Error#1011 - Não foi possível executar o Login. Verifique suas Informações.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="caixaBranco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="caixaBranco">Campos Vazios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Error#1022 - Os campos não podem ficar vazios.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <footer>
-    <!--Script Loaders-->
     <script src="./src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
