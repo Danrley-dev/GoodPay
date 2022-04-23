@@ -9,7 +9,7 @@
 }
 
 .row {
-    text-align: center;
+    text-align: start;
 }
 
 .main {
@@ -33,6 +33,14 @@
 }
 
 #senha1 {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    line-height: 28px;
+}
+
+#senha_confirmar{
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 10px;

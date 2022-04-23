@@ -230,33 +230,68 @@
                 <h2 class="linhacriarconta"></h2>
               </div>
               <div class="menucadastro">
-                <form action="" class="ms-4">
+                <form class="ms-4 was-validated" novalidate>
                   <div class="input-group mb-4">
-                    <input id="text1" type="text" class="form-control" placeholder="Usuario" aria-label="email"
-                      aria-describedby="basic-addon1">
+                    <label for=text1" class="form-label"></label>
+                    <input type="text" id="text1" class="form-control"  value=""
+                      placeholder="Usuario" required>
+                    <div class="valid-feedback">
+                      Parece bom!
+                    </div>
+                    <div class="invalid-feedback">
+                      Por favor preencha o campo!
+                    </div>
                   </div>
                   <div class="input-group mb-4">
-                    <input id="email1" type="email" class="form-control" placeholder="Email" aria-label="email"
-                      aria-describedby="basic-addon1">
+                    <label for="email" class="form-label"></label>
+                    <input type="email" id="email1" class="form-control"  value=""
+                      placeholder="Email" required>
+                      <div class="valid-feedback">
+                        Parece bom!
+                      </div>
+                      <div class="invalid-feedback">
+                        Por favor preencha o campo!
+                      </div>
                   </div>
                   <div class="input-group mb-4">
-                    <input id="senha1" type="password" class="form-control" placeholder="Senha" aria-label="senha"
-                      aria-describedby="basic-addon1">
+                    <label for="senha1" class="form-label"></label>
+                    <input type="password" id="senha1" class="form-control"  value=""
+                      placeholder="Senha" required>
+                      <div class="valid-feedback">
+                        Parece bom!
+                      </div>
+                      <div class="invalid-feedback">
+                        Por favor preencha o campo!
+                      </div>
                   </div>
-                  <div class="input-group">
-                    <input id="senha1" type="password" class="form-control" placeholder="Confirme a senha"
-                      aria-label="senha" aria-describedby="basic-addon1">
+                  <div class="input-group mb-4">
+                    <label for="senha_confirmar" class="form-label"></label>
+                    <input  type="password" id="senha_confirmar" class="form-control"  value=""
+                      placeholder="Confirma senha" required>
+                      <div class="valid-feedback">
+                        Parece bom!
+                      </div>
+                      <div class="invalid-feedback">
+                        Por favor preencha o campo!
+                      </div>
                   </div>
+
                   <div class="mb-3 form-check" style="margin-top: 20px; text-align: left;">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1"> Declaro que li e estou de
+
+                    <input type="checkbox" class="form-check-input is-invalid" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label" for="invalidCheck3"> Declaro que li e estou de
                       acordo com os <a class="termos" href="./termoseuso.html">Termos e
                         Condições de uso.</a>
                     </label>
                   </div>
+
                   <div class="d-grid gap-2">
-                    <button class="btn-primary" type="button" data-bs-dismiss="offcanvas">Cadastrar</button>
+                    <button class="btn-primary" type="button" data-bs-dismiss="offcanvas" onclick="validarSenha()">Cadastrar</button>
+                    <td colspan="2"><p id="resultado"> &nbsp;</p></td>
                   </div>
+                  <!-- <div class="d-grid gap-2">
+                    <button class="btn-primary" type="submit" data-bs-dismiss="offcanvas" onclick="validarSenha()" >Cadastrar</button>
+                  </div> -->
                   <div class="logincadastro" style="margin-top: 20px; text-align: left;">
                     <h5><strong>Já é cadastrado? </strong> <a class="façalogin" href="">Faça seu login</a></h5>
                   </div>
