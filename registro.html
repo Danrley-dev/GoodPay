@@ -294,6 +294,10 @@
                   </div> -->
                   <div class="logincadastro" style="margin-top: 20px; text-align: left;">
                     <h5><strong>Já é cadastrado? </strong> <a class="façalogin" href="">Faça seu login</a></h5>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#botaoRetorno">
+                    Página principal
+                  </button>
                   </div>
                 </form>
               </div>
@@ -385,6 +389,27 @@
         </div>
       </div>
     </div>
+
+      <!-- Modal Botão retorno -->
+      <div class="modal fade" id="botaoRetorno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Deseja retornar a pagina principal?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <a href="./app.html"><button type="button" class="btn btn-secondary">Desejo voltar</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 </body>
 
