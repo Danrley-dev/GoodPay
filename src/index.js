@@ -47,3 +47,17 @@ function rotaRecuperar() {
 function chamaModalCard2(){
   mostrarModal2.show();   
 }
+
+function validarSenha() {   
+  let senha1 = document.getElementById("senha1").value;   
+  let senha2 = document.getElementById("senha_confirmar").value;    
+
+  if(senha1.length === 0) {     
+    document.getElementById('resultado').innerHTML = "Campo obrigatório. Por favor preencher!";   
+  } else if(senha2.length === 0) {     
+    document.getElementById('resultado').innerHTML = "Campo obrigatório. Por favor preencher!";   
+  }  else if (senha1 == senha2){     
+      document.getElementById('resultado').innerHTML = "Senhas corretas";   
+  } else {     document.getElementById('resultado').innerHTML = "Senhas diferentes. Tente novamente";   
+}
+}
