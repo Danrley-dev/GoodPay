@@ -382,7 +382,7 @@
                                     <p class="card-text">Aqui você poderá designar cada parte dos seus rendimentos e
                                         planejar para
                                         que seu dinheiro posso sempre cuidar mais de você.</p>
-                                    <button type="button" class="btn btn-outline-success">Leia
+                                    <button type="button" onclick="chamaModalCard1()" class="btn btn-outline-success">Leia
                                         mais...</button>
                                     <p class="card-text"><small class="text-muted">Dezembro 17 de 2021</small></p>
                                 </div>
@@ -396,7 +396,7 @@
                                         comunidade tem dicas exclusivas para gerenciar os gastos e economizar em coisas
                                         pequenas e
                                         sem dor no bolso.</p>
-                                    <button type="button" class="btn btn-outline-success">Leia mais...</button>
+                                    <button type="button" onclick="chamaModalCard2()" class="btn btn-outline-success">Leia mais...</button>
                                     <p class="card-text"><small class="text-muted">21 de Abril 2022 </small></p>
                                 </div>
                             </div>
@@ -540,6 +540,28 @@
     </div>
     <!--Modal de Comunicação [Elementos não visíveis]-->
     <!--Modal "card1"-->
+    <div class="modal fade" id="modalCard1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="titulo">Planejamento Sempre</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="corpo" class="text-center">
+                        <img src="./img/1.png" class="img-end" width="180" height="180" alt="Pequenos Pecados">
+                    <p>Aqui você poderá designar cada parte dos seus rendimentos e planejar para que seu dinheiro posso sempre cuidar mais de você.
+                    </p>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-outline-primary" href="https://soulcodeacademy.org/" role="button">Quero
+                        Assinar</a>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Modal "card2"  REDES SOCIAIS-->
     <div class="modal fade" id="modalCard2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
