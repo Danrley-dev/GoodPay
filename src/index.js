@@ -1,6 +1,7 @@
 var janelaLogin = new bootstrap.Modal(document.getElementById("loginNegado"));
 var mostrarModal = new bootstrap.Modal(document.getElementById("modalCard7"));
 var janelacaixaBranca = new bootstrap.Modal(document.getElementById("caixaBranco"));
+var mostrarModal2 = new bootstrap.Modal(document.getElementById("modalCard2"));
 
 function rotaCadastro() {
   window.location.href = "../registro.html";
@@ -40,4 +41,9 @@ function rotaRecuperar() {
   } else {
       alert("Codigo de recuperação enviado para o Email cadastrado!")
   }
+}
+
+
+function chamaModalCard2(){
+  mostrarModal2.show();   
 }
