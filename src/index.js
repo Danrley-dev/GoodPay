@@ -88,3 +88,33 @@ function validarSenha() {
     document.getElementById('resultado').innerHTML = "Senhas diferentes. Tente novamente";
   }
 }
+
+function modalErros(){
+  var mostrarErros = new bootstrap.Modal(document.getElementById("erros"));
+  mostrarErros.show()
+}
+
+function modalErros2(){
+  var mostrarErros2 = new bootstrap.Modal(document.getElementById("erros2"));
+  mostrarErros2.show()
+}
+function modalErros3(){
+  var mostrarErros3 = new bootstrap.Modal(document.getElementById("erros3"));
+  mostrarErros3.show()
+}
+function modalErros4(){
+  var mostrarErros4 = new bootstrap.Modal(document.getElementById("erros4"));
+  mostrarErros4.show()
+}
+function modalErros5(){
+  var mostrarErros5 = new bootstrap.Modal(document.getElementById("erros5"));
+  mostrarErros5.show()
+}
+function modalErros6(){
+  var mostrarErros6 = new bootstrap.Modal(document.getElementById("erros6"));
+  mostrarErros6.show()
+}
+function modalErros7(){
+  var mostrarErros7 = new bootstrap.Modal(document.getElementById("erros7"));
+  mostrarErros7.show()
+}
