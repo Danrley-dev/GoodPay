@@ -41,43 +41,47 @@ function rotaLogin() {
     janelaLogin.show();
   }
 }
+function fecharModalRecupera() {  /**Função é chamada quando acionado o botão fechar do modal */
+  window.location.href = "../app.html";
+}
 
 function chamaModalCard() {
-  let titulo = document.getElementById("titulo").value;
-  let corpo = document.getElementById("corpo").value;
+  var mostrarModal = new bootstrap.Modal(document.getElementById("modalCard7"));
 
   mostrarModal.show();
 }
 
-function rotaRecuperar() {
-  let usuario = "danrley"
-  let email = "danrleysouza53@gmail.com"
-  let usuarioDigitado = document.getElementById("recuperarUsuario").value
-  let emailDigitado = document.getElementById("recuperarEmail").value
-  if (!usuarioDigitado || !emailDigitado) {
-    alert("Há campos não preenchidos");
-  } else if (usuarioDigitado !== usuario || emailDigitado !== email) {
-    alert("Email ou Usuario incorretos!")
-  } else {
-    alert("Codigo de recuperação enviado para o Email cadastrado!")
+  function recuperarSenhaModal() {
+    var recuperarSenha = new bootstrap.Modal(document.getElementById("recuperaSenha"));
+    let nomeUsuario = document.getElementById("username").value;
+    let emailUsuario = document.getElementById("emailRecuperacao").value;
+    let alertErro = " ";
+    if (nomeUsuario.length === 0 || emailUsuario.length === 0) {
+      alertErro = "<div class='alert alert-danger'> Usuário ou E-mail não preenchido!!</div>";
+      document.getElementById("alert").innerHTML = alertErro;
+  
+    } else {
+      recuperarSenha.show();
+    }
   }
-}
 
-function chamaModalCard2() {
-  mostrarModal2.show();
-}
+  
 
-function validarSenha() {
-  let senha1 = document.getElementById("senha1").value;
-  let senha2 = document.getElementById("senha_confirmar").value;
-
-  if (senha1.length === 0) {
-    document.getElementById('resultado').innerHTML = "Campo obrigatório. Por favor preencher!";
-  } else if (senha2.length === 0) {
-    document.getElementById('resultado').innerHTML = "Campo obrigatório. Por favor preencher!";
-  } else if (senha1 == senha2) {
-    document.getElementById('resultado').innerHTML = "Usuário cadastrado com sucesso. seja bem vindo!";
-  } else {
-    document.getElementById('resultado').innerHTML = "Senhas diferentes. Tente novamente";
+  function chamaModalCard2() {
+    mostrarModal2.show();
   }
-}
+
+  function validarSenha() {
+    let senha1 = document.getElementById("senha1").value;
+    let senha2 = document.getElementById("senha_confirmar").value;
+
+    if (senha1.length === 0) {
+      document.getElementById('resultado').innerHTML = "Campo obrigatório. Por favor preencher!";
+    } else if (senha2.length === 0) {
+      document.getElementById('resultado').innerHTML = "Campo obrigatório. Por favor preencher!";
+    } else if (senha1 == senha2) {
+      document.getElementById('resultado').innerHTML = "Usuário cadastrado com sucesso. seja bem vindo!";
+    } else {
+      document.getElementById('resultado').innerHTML = "Senhas diferentes. Tente novamente";
+    }
+  }

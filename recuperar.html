@@ -134,32 +134,63 @@
     </header>
     <main>
         <div class="container border-form">
-            <div class="row">
-                <div class="col">
+            <div class="row" >
+                <div class="col ">
                     <img src="./img/Reset password-bro.png" alt="" style="width: 550px;">
                 </div>
-                <div class="col" style="margin: auto;">
+                <div class="col text-center" style="margin: auto;">
                     <p class="preencha">Preencha os campos para recuperar a senha.</p>
                     <hr width="398px">
                     <br>
+                    <div id="alert" style="width: 400px;"></div>
                     <div class="input-group mb-3" style="width: 400px; height: 46px;">
                         <span class="input-group-text " id="basic-addon1 "><img src="./img/outline_account_circle_black_24dp.png " alt=" "></span>
-                        <input type="text " class="form-control " placeholder="Nome de usuário" aria-label="Username " aria-describedby="basic-addon1 " id="recuperarUsuario">
+                        <input id="username" type="text " class="form-control " placeholder="Nome de usuário" aria-label="Username " aria-describedby="basic-addon1 ">
                     </div>
                     <br>
                     <div class="input-group mb-3 " style="width: 400px; height: 46px;">
                         <span class="input-group-text " id="basic-addon1 "><img src="./img/outline_email_black_24dp.png " alt=" "></span>
-                        <input type="text " class="form-control " placeholder="Digite seu Email" aria-label="Username " aria-describedby="basic-addon1 " id="recuperarEmail">
+                        <input id="emailRecuperacao" type="email" class="form-control " placeholder="Digite seu Email" aria-label="Username " aria-describedby="basic-addon1 ">
                     </div>
-                    <br>
+                        <br>
                     <div>
-                        <button type="button" class="btn btn-success" style="padding: 8px 100px; margin-right: 36%;" onclick="rotaRecuperar()">Enviar</button>
+                        <button type="button" class="btn btn-success" style="padding: 8px 100px; margin-right: 36%;" onclick="recuperarSenhaModal()">Enviar</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <!--Modal de Comunicação [Elementos não visíveis]-->
+    <div class="modal fade" id="recuperaSenha" tabindex="-1" aria-labelledby="recuperaSenha" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tituloMensagem">Mensagem</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="fechar"></button>
+            </div>
+            <div class="modal-body">
+                <p id="mensagem">
+                    Email enviado com sucesso!!!
+                </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="fecharModalRecupera()" >Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 
-
+<footer>
+    <script src="./src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</footer>
 </html>
