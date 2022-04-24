@@ -45,6 +45,12 @@ function fecharModalRecupera() {  /**Função é chamada quando acionado o botã
   window.location.href = "../app.html";
 }
 
+function chamaModalCard3() {
+  var mostrarModal3 = new bootstrap.Modal(document.getElementById("modalCard3"));
+
+  mostrarModal3.show();
+}
+
 function chamaModalCard() {
   var mostrarModal = new bootstrap.Modal(document.getElementById("modalCard7"));
 
@@ -78,6 +84,8 @@ function chamaModalCard1() {
 function chamaModalCard2() {
   mostrarModal2.show();
 }
+
+
 
 function validarSenha() {
   let senha1 = document.getElementById("senha1").value;
