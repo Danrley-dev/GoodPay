@@ -17,10 +17,18 @@ var soma = numero1 + numero2;
 var tentativas = 3;
 
 function rotaLogin() {
+  document.getElementById("senha").classList.remove("erroLogin");
+  document.getElementById("email").classList.remove("erroLogin");
+  document.getElementById("senha").classList.remove("invalidoTexto");
+  document.getElementById("email").classList.remove("invalidoTexto");
   let email = document.getElementById("email").value;
   let senha = document.getElementById("senha").value;
   var caixabranca = Object.keys(email && senha).length === 0;
   let resposta = Number(document.getElementById("resposta").value);
+  if (email === "" || senha === "") {
+    document.getElementById("senha").classList.add('erroLogin');
+    document.getElementById("email").classList.add('erroLogin');
+  }
   if (email === "victoricoma@gmail.com" && senha === "gordinho123") {
     if (resposta === soma) {
       window.location.href = "../index.html";
@@ -39,8 +47,12 @@ function rotaLogin() {
     janelacaixaBranca.show()
   } else {
     janelaLogin.show();
+    document.getElementById("senha").classList.add('invalidoTexto');
+    document.getElementById("email").classList.add('invalidoTexto');
+ 
   }
 }
+
 function fecharModalRecupera() {  /**Função é chamada quando acionado o botão fechar do modal */
   window.location.href = "../app.html";
 }
