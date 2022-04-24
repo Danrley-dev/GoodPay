@@ -79,12 +79,15 @@ function validarSenha() {
   let senha2 = document.getElementById("senha_confirmar").value;
 
   if (senha1.length === 0) {
+    document.getElementById('resultado').style.color = "#FF6347";
     document.getElementById('resultado').innerHTML = "Campo obrigatório. Por favor preencher!";
   } else if (senha2.length === 0) {
     document.getElementById('resultado').innerHTML = "Campo obrigatório. Por favor preencher!";
   } else if (senha1 == senha2) {
-    document.getElementById('resultado').innerHTML = "Usuário cadastrado com sucesso. seja bem vindo!";
+    document.getElementById('resultado').style.color = "#008B45"
+    window.alert("Usuário cadastrado com sucesso. seja bem vindo!");
   } else {
+    document.getElementById('resultado').style.color = "#FF6347";
     document.getElementById('resultado').innerHTML = "Senhas diferentes. Tente novamente";
   }
 }

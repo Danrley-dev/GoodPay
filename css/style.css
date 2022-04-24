@@ -93,10 +93,6 @@
     height: 55px;
 }
 
-.imgcadastro {
-    height: 550px;
-}
-
 .façalogin {
     text-decoration: none;
 }
@@ -124,8 +120,13 @@
     display: flex;
     flex-direction: column;
 }
+
 .logincadastro{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#invalidCheck3{
+    cursor: pointer;
+}
