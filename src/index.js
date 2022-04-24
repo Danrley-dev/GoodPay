@@ -52,6 +52,12 @@ function chamaModalCard() {
   mostrarModal.show();
 }
 
+function chamaModalCard8() {
+  var mostrarModal8 = new bootstrap.Modal(document.getElementById("modalCard8"));
+
+  mostrarModal8.show();
+}
+
 function recuperarSenhaModal() {
   var recuperarSenha = new bootstrap.Modal(document.getElementById("recuperaSenha"));
   let nomeUsuario = document.getElementById("username").value;
