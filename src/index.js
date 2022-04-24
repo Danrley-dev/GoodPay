@@ -63,6 +63,12 @@ function chamaModalCard8() {
   mostrarModal8.show();
 }
 
+function chamaModalCard9() {
+  var mostrarModal9 = new bootstrap.Modal(document.getElementById("modalCard9"));
+
+  mostrarModal9.show();
+}
+
 function recuperarSenhaModal() {
   var recuperarSenha = new bootstrap.Modal(document.getElementById("recuperaSenha"));
   let nomeUsuario = document.getElementById("username").value;
