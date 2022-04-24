@@ -1,5 +1,4 @@
 var janelaLogin = new bootstrap.Modal(document.getElementById("loginNegado"));
-var mostrarModal = new bootstrap.Modal(document.getElementById("modalCard7"));
 var janelacaixaBranca = new bootstrap.Modal(document.getElementById("caixaBranco"));
 var mostrarModal1 = new bootstrap.Modal(document.getElementById("modalCard1"));
 var mostrarModal2 = new bootstrap.Modal(document.getElementById("modalCard2"));
@@ -98,32 +97,44 @@ function validarSenha() {
   }
 }
 
-function modalErros(){
+function modalErros() {
   var mostrarErros = new bootstrap.Modal(document.getElementById("erros"));
   mostrarErros.show()
 }
 
-function modalErros2(){
+function modalErros2() {
   var mostrarErros2 = new bootstrap.Modal(document.getElementById("erros2"));
   mostrarErros2.show()
 }
-function modalErros3(){
+function modalErros3() {
   var mostrarErros3 = new bootstrap.Modal(document.getElementById("erros3"));
   mostrarErros3.show()
 }
-function modalErros4(){
+function modalErros4() {
   var mostrarErros4 = new bootstrap.Modal(document.getElementById("erros4"));
   mostrarErros4.show()
 }
-function modalErros5(){
+function modalErros5() {
   var mostrarErros5 = new bootstrap.Modal(document.getElementById("erros5"));
   mostrarErros5.show()
 }
-function modalErros6(){
+function modalErros6() {
   var mostrarErros6 = new bootstrap.Modal(document.getElementById("erros6"));
   mostrarErros6.show()
 }
-function modalErros7(){
+function modalErros7() {
   var mostrarErros7 = new bootstrap.Modal(document.getElementById("erros7"));
   mostrarErros7.show()
 }
+
+function setDataAtualCards() {
+  var data = new Date();
+  var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+  var dataFormatada = `${meses[data.getMonth()]}  ${data.getDate()} de ${data.getFullYear()}`;
+  var lista = document.getElementsByClassName('data');
+
+  for (i = 0; i < lista.length; i++) {
+    lista[i].innerHTML = `${dataFormatada}`;
+  }
+}
+setDataAtualCards();
