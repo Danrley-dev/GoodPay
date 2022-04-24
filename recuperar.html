@@ -94,52 +94,54 @@
                                     aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body p-0 pt-2">
                                         <ul class="list-group-flush">
-                                          <li class="list-group-item">Email não encontrado...
-                                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="offcanvas"
-                                              onclick="modalErros()">Leia
-                                              mais...</button>
-                                          </li>
-                    
-                                          <li class="list-group-item text-dark">Campo Email
-                                            vazio...
-                                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="offcanvas"
-                                              onclick="modalErros2()">Leia
-                                              mais...</button>
-                                          </li>
-                    
-                                          <li class="list-group-item text-dark">Campos vazios...
-                                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="offcanvas"
-                                              onclick="modalErros3()">Leia
-                                              mais...</button>
-                                          </li>
-                    
-                                          <li class="list-group-item text-dark">Email ou senha incompleto...
-                                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="offcanvas"
-                                              onclick="modalErros4()">Leia
-                                              mais...</button>
-                                          </li>
-                    
-                                          <li class="list-group-item text-dark">Email ou usuário incompleto...
-                                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="offcanvas"
-                                              onclick="modalErros5()">Leia
-                                              mais...</button>
-                                          </li>
-                    
-                                          <li class="list-group-item text-dark">Usuário não
-                                            encontrado...
-                                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="offcanvas"
-                                              onclick="modalErros6()">Leia
-                                              mais...</button>
-                                          </li>
-                    
-                                          <li class="list-group-item text-dark">Email não
-                                            encontrado...
-                                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="offcanvas"
-                                              onclick="modalErros7()">Leia
-                                              mais...</button>
-                                          </li>
+                                            <li class="list-group-item">gp-error#1011 - Email não encontrado... 
+                                                <button type="button" class="btn btn-outline-success"
+                                                    data-bs-dismiss="offcanvas" onclick="modalErros()">Leia
+                                                    mais...</button>
+                                            </li>
+
+                                            <li class="list-group-item text-dark">gp-error#1022 - Campo Email
+                                                vazio...
+                                                <button type="button" class="btn btn-outline-success"
+                                                    data-bs-dismiss="offcanvas" onclick="modalErros2()">Leia
+                                                    mais...</button>
+                                            </li>
+
+                                            <li class="list-group-item text-dark">ggp-error#1033 - Campos vazios...
+                                                <button type="button" class="btn btn-outline-success"
+                                                    data-bs-dismiss="offcanvas" onclick="modalErros3()">Leia
+                                                    mais...</button>
+                                            </li>
+
+                                            <li class="list-group-item text-dark">gp-error#1044 - Email ou senha
+                                                in...
+                                                <button type="button" class="btn btn-outline-success"
+                                                    data-bs-dismiss="offcanvas" onclick="modalErros4()">Leia
+                                                    mais...</button>
+                                            </li>
+
+                                            <li class="list-group-item text-dark">gp-error#1055 - Email ou usuário
+                                                in...
+                                                <button type="button" class="btn btn-outline-success"
+                                                    data-bs-dismiss="offcanvas" onclick="modalErros5()">Leia
+                                                    mais...</button>
+                                            </li>
+
+                                            <li class="list-group-item text-dark">gp-error#1066 - Usuário não
+                                                encontrado...
+                                                <button type="button" class="btn btn-outline-success"
+                                                    data-bs-dismiss="offcanvas" onclick="modalErros6()">Leia
+                                                    mais...</button>
+                                            </li>
+
+                                            <li class="list-group-item text-dark">gp-error#1077 - Email não
+                                                encontrado...
+                                                <button type="button" class="btn btn-outline-success"
+                                                    data-bs-dismiss="offcanvas" onclick="modalErros7()">Leia
+                                                    mais...</button>
+                                            </li>
                                         </ul>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,27 +158,32 @@
                         style="width: 354px; margin-top: 20%; margin-right: 10%;">
                 </div>
                 <div class="col" style="margin-top: 7%;">
-                    <p class="preencha">Preencha os campos para recuperar a senha.</p>
-                    <hr width="398px">
+                    <p class="preencha" style="margin-left: 5%;">Preencha os campos para recuperar a senha.</p>
+                    <hr width="398px" style="margin-left: 5%;">
                     <br>
-                    <div class="input-group mb-3" style="width: 398px; height: 46px;">
-                        <span class="input-group-text " id="basic-addon1 "><img
-                                src="./img/outline_account_circle_black_24dp.png " alt=" "></span>
-                        <input type="text " class="form-control " placeholder="Nome de usuário" aria-label="Username "
-                            aria-describedby="basic-addon1 " id="recuperarUsuario">
-                    </div>
-                    <br>
-                    <div class="input-group mb-3 " style="width: 398px; height: 46px;">
-                        <span class="input-group-text " id="basic-addon1 "><img
-                                src="./img/outline_email_black_24dp.png " alt=" "></span>
-                        <input type="text " class="form-control " placeholder="Digite seu Email" aria-label="Username "
-                            aria-describedby="basic-addon1 " id="recuperarEmail">
-                    </div>
-                    <br>
-                    <div>
-                        <button type="button" class="btn btn-success" style="padding: 8px 100px; margin-left: 80px;"
-                            onclick="rotaRecuperar()">Enviar</button>
-                    </div>
+                        <div class="container">
+                            <div id="alert" style="width: 398px;margin-left: 0.7%;"></div>
+                            <form action="/action_page.php" class="was-validated">
+                                <div class="mb-3 mt-3" style="text-align: left;">
+                                    <label for="uname" class="form-label">Usuário:</label>
+                                    <input style="width: 398px; height: 46px;" type="text" class="form-control" id="username" placeholder="Digite usuário"
+                                        name="uname" required>
+                                    <div class="valid-feedback">Válido.</div>
+                                    <div class="invalid-feedback">Digite o nome de usuário.</div>
+                                </div>
+                                <div class="form" style="text-align: left;" >
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input style="width: 398px; height: 46px;" type="text" class="form-control" id="emailRecuperacao" placeholder="Digite Email"
+                                        name="tx_email" required>
+                                    <div class="valid-feedback">Válido.</div>
+                                    <div class="invalid-feedback">Digite seu email.</div>
+                                </div>
+                            </form>
+                            <div>
+                                <button type="button" class="btn btn-success" style="padding: 8px 100px; margin-left: 80px;"
+                                onclick="recuperarSenhaModal()">Enviar</button>
+                            </div>
+                        </div>
                 </div>
                 <div class="col">
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
@@ -425,7 +432,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" id="titulo4">gp-error#1044 - Email ou senha
-                        in...</h4>
+                        incorretos</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" id="corpo4" class="text-center">
@@ -471,7 +478,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" id="titulo5">gp-error#1055 - Email ou usuário
-                        in...</h4>
+                        incorretos</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" id="corpo5" class="text-center">
