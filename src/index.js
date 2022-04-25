@@ -1,57 +1,57 @@
-var janelaLogin = new bootstrap.Modal(document.getElementById("loginNegado"));
-var janelacaixaBranca = new bootstrap.Modal(document.getElementById("caixaBranco"));
+// var janelaLogin = new bootstrap.Modal(document.getElementById("loginNegado"));
+// var janelacaixaBranca = new bootstrap.Modal(document.getElementById("caixaBranco"));
 var mostrarModal1 = new bootstrap.Modal(document.getElementById("modalCard1"));
 var mostrarModal2 = new bootstrap.Modal(document.getElementById("modalCard2"));
-var janelaAtencao = new bootstrap.Modal(document.getElementById("atencao"));
+// var janelaAtencao = new bootstrap.Modal(document.getElementById("atencao"));
 
 function rotaCadastro() {
-  window.location.href = "../registro.html";
+  window.location.href = "./registro.html";
 }
 function rotaRecuperar() {
-  window.location.href = "../recuperar.html";
+  window.location.href = "./recuperar.html";
 }
 
-var numero1 = document.getElementById("numero1").innerHTML = Math.floor(Math.random() * 99) + 1;
-var numero2 = document.getElementById("numero2").innerHTML = Math.floor(Math.random() * 9) + 1;
-var soma = numero1 + numero2;
-var tentativas = 3;
+// var numero1 = document.getElementById("numero1").innerHTML = Math.floor(Math.random() * 99) + 1;
+// var numero2 = document.getElementById("numero2").innerHTML = Math.floor(Math.random() * 9) + 1;
+// var soma = numero1 + numero2;
+// var tentativas = 3;
 
-function rotaLogin() {
-  document.getElementById("senha").classList.remove("erroLogin");
-  document.getElementById("email").classList.remove("erroLogin");
-  document.getElementById("senha").classList.remove("invalidoTexto");
-  document.getElementById("email").classList.remove("invalidoTexto");
-  let email = document.getElementById("email").value;
-  let senha = document.getElementById("senha").value;
-  var caixabranca = Object.keys(email && senha).length === 0;
-  let resposta = Number(document.getElementById("resposta").value);
-  if (email === "" || senha === "") {
-    document.getElementById("senha").classList.add('erroLogin');
-    document.getElementById("email").classList.add('erroLogin');
-  }
-  if (email === "victoricoma@gmail.com" && senha === "gordinho123") {
-    if (resposta === soma) {
-      window.location.href = "../index.html";
-    } else if (!resposta || resposta !== soma) {
-      if (tentativas > 1) {
-        tentativas--;
-        janelaAtencao.show();
-        document.getElementById("xModal").textContent = `Erro no Captcha! Você só tem mais ${tentativas} tentativas!`;
-      } else {
-        janelaAtencao.show();
-        document.getElementById("xModal").textContent = `Você errou muitas vezes! Tente novamente mais tarde.`;
-        window.location.href = "../recuperar.html";
-      }
-    }
-  } else if (caixabranca === true) {
-    janelacaixaBranca.show()
-  } else {
-    janelaLogin.show();
-    document.getElementById("senha").classList.add('invalidoTexto');
-    document.getElementById("email").classList.add('invalidoTexto');
+// function rotaLogin() {
+//   document.getElementById("senha").classList.remove("erroLogin");
+//   document.getElementById("email").classList.remove("erroLogin");
+//   document.getElementById("senha").classList.remove("invalidoTexto");
+//   document.getElementById("email").classList.remove("invalidoTexto");
+//   let email = document.getElementById("email").value;
+//   let senha = document.getElementById("senha").value;
+//   var caixabranca = Object.keys(email && senha).length === 0;
+//   let resposta = Number(document.getElementById("resposta").value);
+//   if (email === "" || senha === "") {
+//     document.getElementById("senha").classList.add('erroLogin');
+//     document.getElementById("email").classList.add('erroLogin');
+//   }
+//   if (email === "victoricoma@gmail.com" && senha === "gordinho123") {
+//     if (resposta === soma) {
+//       window.location.href = "../index.html";
+//     } else if (!resposta || resposta !== soma) {
+//       if (tentativas > 1) {
+//         tentativas--;
+//         janelaAtencao.show();
+//         document.getElementById("xModal").textContent = `Erro no Captcha! Você só tem mais ${tentativas} tentativas!`;
+//       } else {
+//         janelaAtencao.show();
+//         document.getElementById("xModal").textContent = `Você errou muitas vezes! Tente novamente mais tarde.`;
+//         window.location.href = "../recuperar.html";
+//       }
+//     }
+//   } else if (caixabranca === true) {
+//     janelacaixaBranca.show()
+//   } else {
+//     janelaLogin.show();
+//     document.getElementById("senha").classList.add('invalidoTexto');
+//     document.getElementById("email").classList.add('invalidoTexto');
  
-  }
-}
+//   }
+// }
 
 function fecharModalRecupera() {  /**Função é chamada quando acionado o botão fechar do modal */
   window.location.href = "../app.html";
